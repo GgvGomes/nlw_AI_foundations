@@ -8,3 +8,5 @@ Poder escolher se quer resumir
 
 Em vez de resumo colocar um select entre Resumo e Transcrição
     -> Verificar se a transcrição já foi feita e sempre armazenar o dado dela.
+
+Deixar ele responsivo
