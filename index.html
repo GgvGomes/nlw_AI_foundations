@@ -1,34 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <!-- Inclua os arquivos CSS do Select2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css"
+      rel="stylesheet" />
 
     <title>Shorts Summary</title>
   </head>
   <body>
     <div id="app">
-      <img src="/logo.svg" alt="Logo">
+      <img src="/logo.svg" alt="Logo" />
       <h1>Shorts Summary</h1>
 
       <form id="form">
-        <input type="url" id="url" placeholder="URL do vídeo">
+        <input type="url" id="url" placeholder="URL do vídeo" />
         <button title="Resumir">
           <i class="ph ph-play"></i>
         </button>
       </form>
 
-      <h2>Resumo</h2>
+      <select id="type_action">
+        <option value="1">Resumo</option>
+        <option value="2">Transcrição</option>
+      </select>
+      <!-- <h2>Resumo</h2> -->
       <p class="placeholder" id="content">Escolha um short para resumir</p>
     </div>
 
-    <script type="module" src="/web/main.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Inclua a biblioteca jQuery (necessária para o Select2) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Inclua o arquivo JavaScript do Select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+    <script type="module" src="/web/main.js"></script>
   </body>
 </html>
