@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "env YTDL_NO_UPDATE=1 node --watch --no-warnings server/index.js"
+    "server": "node --watch --no-warnings server/index.js env YTDL_NO_UPDATE=1"
   },
   "devDependencies": {
     "vite": "^4.4.5"
