@@ -1,7 +1,3 @@
-$(document).ready(function () {
-    $('#type_action').select2();
-});
-
 import './form.js';
 
 import './styles/base.css';
