@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 #app > h1{
@@ -18,10 +17,16 @@
 #app > p {
     align-self: flex-start;
     text-align: justify;
-    width: 512px;
+    width: 40vw;
     margin-top: -5px;
     margin-left: 6px;
 }
+
+@media (max-width: 767px) {
+    #form > input {
+        width: 80vw;
+    }
+  }
 
 #app .placeholder{
     color: #7c7c8a;

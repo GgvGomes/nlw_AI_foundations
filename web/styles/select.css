@@ -3,7 +3,13 @@
   margin-top: 52px;
   margin-bottom: 20px;
 
-  width: 168px !important;
+  width: 12vw !important;
+}
+
+@media (max-width: 767px) {
+  #form > input {
+    width: 40vw !important;
+  }
 }
 
 .select2-container--default .select2-selection--single {
