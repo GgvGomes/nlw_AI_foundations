@@ -26,17 +26,22 @@ async function handleSubmit(event) {
     // 1 = Sumarizar
     // 2 = Transcrever
     const selectVal = select.value;
-
     const videoUrl = input.value;
 
-    if (!videoUrl.includes('shorts'))
-        return content.textContent = 'URL inválida, tente novamente';
+    let isShorts = false;
+    let stringSplit;
 
-    const [_, params] = videoUrl.split('/shorts/');
-    const [videoId] = params.split('?si')
+    if (videoUrl.includes('shorts')) {
+        stringSplit = '/shorts/';
+        isShorts = true;
+    }
+    else if (videoUrl.includes('watch?v='))
+        stringSplit = '/watch?v=';
+
+    const [_, videoId] = videoUrl.split(stringSplit)
 
     content.textContent = "Obtendo o texto do audio...";
-    const transcription = await server.get(`/sumary/${videoId}`);
+    const transcription = await server.get(`/sumary/${videoId}?isShorts=${isShorts}`);
     transcriptionText = transcription.data.result;
 
     if (selectVal == 1) await sumarize();
@@ -45,12 +50,12 @@ async function handleSubmit(event) {
     content.classList.remove('placeholder');
 }
 
-async function sumarize () {
+async function sumarize() {
     content.classList.add('placeholder');
 
     content.textContent = "Realizando o resumo...";
 
-    if(sumarizeText == ''){
+    if (sumarizeText == '') {
         const summary = await server.post('/sumary', {
             text: transcriptionText
         });
@@ -63,9 +68,9 @@ async function sumarize () {
 }
 
 async function handleChange() {
-    if(transcriptionText != ''){
-        if(select.value == 2) content.textContent = transcriptionText;
+    if (transcriptionText != '') {
+        if (select.value == 2) content.textContent = transcriptionText;
         else await sumarize();
     }
-    
+
 }

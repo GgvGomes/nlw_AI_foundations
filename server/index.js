@@ -12,7 +12,7 @@ app.use(cors());
 
 app.get('/sumary/:id', async (request, response) => {
     try{
-        await download(request.params.id);
+        await download(request.params.id, request.query.isShorts);
         const audioConverted = await convert();
     
         const result = await transcribe(audioConverted);
