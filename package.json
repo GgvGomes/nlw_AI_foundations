@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 3000",
-    "build": "vite build",
+    "build": "vite build && npm run server",
     "preview": "vite preview",
     "server": "node --watch --no-warnings server/index.js env YTDL_NO_UPDATE=1"
   },
