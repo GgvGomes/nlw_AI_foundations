@@ -1,6 +1,6 @@
 ## Shorts transcription
 
-This app is built with Next.js 13, Tailwind, shadcn/ui, express and xenova.
+This app is built with Vite, Js, css, express and xenova.
 
 ![preview](https://github.com/GgvGomes/nlw_AI_foundations/assets/80273727/6c07ff0b-a44f-4529-b5ef-d2e5b670537b)
 
@@ -24,11 +24,11 @@ Select in the modal whether you want to make a transcription or a summary and cl
  <a href="#roadmap">React</a> • 
  <a href="#tecnologias">IA</a> • 
  <a href="#contribuicao">Fullstack</a> • 
- <a href="#licenc-a">ShadcnUI</a> • 
+ <a href="#licenc-a">Vite</a> • 
  <a href="#autor">Gabriel Gomes</a>
 </p>
 
 <br/><br/>
 <h4 align="center"> 
-	🚧  React Select 🚀 Em construção...  🚧
+	🚧  React Aplication 🚀 Em construção...  🚧
 </h4>
