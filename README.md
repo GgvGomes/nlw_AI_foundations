@@ -28,6 +28,7 @@ Select in the modal whether you want to make a transcription or a summary and cl
  <a href="#autor">Gabriel Gomes</a>
 </p>
 
+<br/><br/>
 <h4 align="center"> 
 	🚧  React Select 🚀 Em construção...  🚧
 </h4>
