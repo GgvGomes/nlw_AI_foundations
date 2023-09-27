@@ -8,6 +8,7 @@ This app is built with Next.js 13, Tailwind, shadcn/ui, express and xenova.
 
 <p>🚀 This application was created to test some Artificial Intelligence APIs.<p>
 <p>📱 This application is responsive to use in mobile devices.<p>
+<br/><br/>
 
 <h1 align="center">
     <a href="https://pt-br.reactjs.org/">🔗 How to use</a>
