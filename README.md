@@ -30,5 +30,5 @@ Select in the modal whether you want to make a transcription or a summary and cl
 
 <br/><br/>
 <h4 align="center"> 
-	🚧  React Aplication 🚀 Em construção...  🚧
+	🚧  React Application 🚀 Em construção...  🚧
 </h4>
