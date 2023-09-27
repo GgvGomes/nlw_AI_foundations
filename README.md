@@ -15,6 +15,8 @@ This app is built with Next.js 13, Tailwind, shadcn/ui, express and xenova.
 Choose a short or short video (not yet adapted for long videos). 
 Select in the modal whether you want to make a transcription or a summary and click the play button and just wait.
 
+![image](https://github.com/GgvGomes/nlw_AI_foundations/assets/80273727/135fef46-72f0-4771-b4a4-d0eeae38bddd)
+
 <p align="center">
  <a href="#objetivo">NLW</a> •
  <a href="#roadmap">React</a> • 
