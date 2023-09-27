@@ -6,8 +6,8 @@ This app is built with Next.js 13, Tailwind, shadcn/ui, express and xenova.
 
 ## Description
 
-🚀 This application was created to test some Artificial Intelligence APIs.
-📱 This application is responsive to use in mobile devices.
+<p>🚀 This application was created to test some Artificial Intelligence APIs.<p>
+<p>📱 This application is responsive to use in mobile devices.<p>
 
 <h1 align="center">
     <a href="https://pt-br.reactjs.org/">🔗 How to use</a>
@@ -26,3 +26,7 @@ Select in the modal whether you want to make a transcription or a summary and cl
  <a href="#licenc-a">ShadcnUI</a> • 
  <a href="#autor">Gabriel Gomes</a>
 </p>
+
+<h4 align="center"> 
+	🚧  React Select 🚀 Em construção...  🚧
+</h4>
